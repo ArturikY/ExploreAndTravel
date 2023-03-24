@@ -15,6 +15,9 @@
 	background: #FB8F1D;
 	border-radius: 8px;
 	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transition: background 0.3s linear;
 
 	&:hover {
@@ -24,9 +27,6 @@
 	p {
 		font-weight: 600;
 		font-size: 16px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		color: #FFFFFF;            
 	}
 }
@@ -65,4 +65,24 @@
 	}
 }
 
+@mixin iconPlus($width: 20px, $height: 20px) {
+	background-image: url(/public/icons/plus.svg);
+	width: $width;
+	height: $height;
+}
+
+@mixin iconCirc($width: 20px, $height: 20px) {
+	background-image: url(/public/icons/circ.svg);
+	width: $width;
+	height: $height;
+}
+
+
 /*!--Миксины--end--!*/
+
+
+/*!--Переменные--start--!*/
+
+// $<variable>: <value>;
+
+/*!--Переменные--end--!*/
