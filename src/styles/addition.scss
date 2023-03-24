@@ -1,0 +1,68 @@
+/*--Подключение шрифтов--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+
+
+
+/*!--Миксины--start--!*/
+
+@mixin buttonInformation() {
+	width: 164px;
+	height: 48px;
+	background: #FB8F1D;
+	border-radius: 8px;
+	border: none;
+	transition: background 0.3s linear;
+
+	&:hover {
+		background: #ED760E;
+	}
+
+	p {
+		font-weight: 600;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #FFFFFF;            
+	}
+}
+
+@mixin textInfromation() {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 30px;
+	color: #7D7987;
+}
+
+@mixin link() {
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+	transition: transform 0.2s linear;
+
+	&:hover {
+		transform: translateX(10px);
+	}
+
+	p {
+		font-family: 'Inter';
+		font-weight: 600;
+		font-size: 17px;
+		color: #FB8F1D;
+		margin-top: 2px;
+	}
+
+	svg {
+		width: 6px;
+		height: 13.5px;
+		margin-left: 10px;
+	}
+}
+
+/*!--Миксины--end--!*/
