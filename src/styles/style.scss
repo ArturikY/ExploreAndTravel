@@ -753,7 +753,11 @@ h3, h4 {
 }
 
 .picture_slide {
+    width: 384px;
+    height: 491px;
     position: relative;
+    margin-right: 15px;
+    // margin-right: 200 / 1354 * 100%;
     
     img {
         width: 381px;
@@ -763,9 +767,59 @@ h3, h4 {
     }
 
     .plus {
+        top: 95.4%;
+        left: -12px;
         @include iconPlus(32px, 32px);
-        transform: rotate(8.17deg);
         position: absolute;
+    }
+
+    .circ {
+        top: -20px;
+        left: 93%;
+        @include iconCirc(42px, 42px);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .navigation_slider {
+        top: 87%;
+        left: 65%;
+        width: 132px;
+        height: 60px;
+        background: #FFFFFF;
+        border-radius: 16px 0px 0px 0px;
+        position: absolute;
+    }
+}
+
+.swiper {
+    width: 1169px;
+    height: 511px;
+    margin-right: 200px;
+}
+
+.swiper-wrapper {
+    margin-top: 20px;
+}
+
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    // top: 40px;
+
+    svg {
+        color: red;
+    }
+}
+
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    // top: 40px;
+
+    svg {
+        color: red;
     }
 }
 
