@@ -5,6 +5,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 
 
+/*!--Стартовые стили--start--!*/
+
+h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+h3, h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+*{
+    font-family: "Mulish" sans-serif;
+}
+
+.container {
+    max-width: 1354px;
+    padding: 0px 0px;
+
+    @media (max-width: 1400px) {
+        & {
+            max-width: 1150px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        & {
+            max-width: 960px;
+        }
+    }
+}
+
+/*!--Стартовые стили--end--!*/
 
 
 /*!--Миксины--start--!*/
