@@ -73,10 +73,10 @@
         line-height: 19px;
         color: #B8BECD;
         text-decoration: none;
-        transition: color 0.3s linear;
-        
+        transition: transform 0.4s ease;
+
         &:hover {
-            color: #202336;
+            transform: translateY(-5px);
         }
     }
 }
@@ -820,7 +820,7 @@
 
 .swiper {
     width: 1169px;
-    height: 511px;
+    height: 518px;
     margin-right: 200px;
 
     @media (max-width: 1400px) {
@@ -946,6 +946,11 @@
 
 .story {
     width: 266px;
+    transition: background 0.3s linear;
+
+    &:hover {
+        background: rgb(250, 250, 250);
+    }
 
     @media (max-width: 1400px) {
         width: 246px;
@@ -957,7 +962,7 @@
 }
 
 .picture_stories {
-    width: 261px;
+    width: 266px;
     height: 231px;
     margin-bottom: 13px;
 
@@ -999,15 +1004,158 @@
     }
 
     a {
+        width: 50px;
         font-weight: 600;
         font-size: 15px;
         color: #FB8F1D;
-        transition: transform 0.2s linear;
+        transition: color 0.3s linear;
 
         &:hover {
-            transform: translateX(10px);
+            color: #042521;
         }
     }
 }
 
 /*!--Секция 6--end--!*/
+
+
+/*!--Подвал сайта--start--!*/
+
+.site__footer {
+    width: 100%;
+    background: #F9F9FB;
+    margin-top: 200px;
+}
+
+.content__footer {
+    padding-top: 80px;
+    padding-left: 50px;
+    font-family: "Mulish" sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #848484;
+}
+
+.text__footer {
+    display: flex;
+}
+
+.finally {
+    width: 391px;
+
+    .circles {
+        margin-top: 0px;
+    }
+
+    .main_circle {
+        width: 44px;
+        height: 44px;
+        position: relative;
+    }
+        
+    .green_circle {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+    }
+            
+    .orange_circle {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 22%;
+        left: 22%;
+    }
+}
+
+.text-finally {
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 55px;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 20px;
+    }
+}
+
+.title__footer {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 60px;
+    color: #000;    
+}
+
+.destinations__links {
+    width: 115px;
+    margin-left: 108 / 1600 * 100%;
+
+    nav {
+        margin-bottom: 8px;
+    }
+}
+
+.shop__links {
+    width: 180px;
+    margin-left: 158 / 1600 * 100%;
+
+    nav {
+        margin-bottom: 8px;
+    }
+}
+
+.interests__links {
+    width: 180px;
+    margin-left: 180 / 1600 * 100%;
+
+    nav {
+        margin-bottom: 8px;
+    }
+}
+
+.underline-footer {
+    border-top: 1px solid #C4C4C4;
+    margin-top: 80px;
+}
+
+.social__links {
+    width: 250px;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twiter {
+    background-image: url(/public/icons/twiter.svg);
+    width: 25px;
+    height: 20px;
+}
+
+.facebook {
+    background-image: url(/public/icons/facebook.svg);
+    width: 10px;
+    height: 22px;
+}
+
+.instagram {
+    background-image: url(/public/icons/instagram.svg);
+    width: 22px;
+    height: 22px;
+}
+
+.index {
+    background-image: url(/public/icons/index.svg);
+    width: 23px;
+    height: 22px;
+}
+
+.youtube {
+    background-image: url(/public/icons/youtube.svg);
+    width: 28px;
+    height: 19px;
+}
+
+/*!--Подвал сайта--end--!*/
